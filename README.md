@@ -1,6 +1,6 @@
 ---
 services: documentdb
-platforms: dotnet
+platforms: java
 author: arramac
 ---
 
@@ -9,19 +9,20 @@ This sample shows you how to use the Microsoft Azure DocumentDB service to store
 
 ## Running this sample
 
-1. Before you can run this sample, you must have the following prerequisites:
-* An active Azure account. If you don't have one, you can sign up for a [free account](https://azure.microsoft.com/free/). 
-    * Alternatively, you can use the [Azure DocumentDB Emulator](https://azure.microsoft.com/documentation/articles/documentdb-nosql-local-emulator) for this tutorial.
-* JDK 1.7+ (Run `apt-get install default-jdk` if you don't have JDK)
-* Maven (Run `apt-get install maven` if you don't have Maven)
+* Before you can run this sample, you must have the following prerequisites:
 
-2. Clone this repository using `git clone git@github.com:arramac/documentdb-java-getting-started.git`
+   * An active Azure account. If you don't have one, you can sign up for a [free account](https://azure.microsoft.com/free/). 
+       * Alternatively, you can use the [Azure DocumentDB Emulator](https://azure.microsoft.com/documentation/articles/documentdb-nosql-local-emulator) for this tutorial.
+   * JDK 1.7+ (Run `apt-get install default-jdk` if you don't have JDK)
+   * Maven (Run `apt-get install maven` if you don't have Maven)
 
-3. If using the DocumentDB Emulator, please follow instructions at [Azure DocumentDB Emulator](https://azure.microsoft.com/documentation/articles/documentdb-nosql-local-emulator) to install and start the emulator.
+* Then, clone this repository using `git clone git@github.com:arramac/documentdb-java-getting-started.git`
 
-If using your Azure DocumentDB account, please substitute the endpoint and authorization key in Program.java with your account's details.
+* Next, substitute the endpoint and authorization key in Program.java with your DocumentDB account's values. 
 
-4. From a command prompt or shell, run `mvn package` followed by `mvn exec:java -D exec.mainClass=GetStarted.Program`
+* From a command prompt or shell, run `mvn package` to compile and resolve dependencies.
+
+* From a command prompt or shell, run `mvn exec:java -D exec.mainClass=GetStarted.Program` to run the application.
 
 ## About the code
 The code included in this sample is intended to get you quickly started with a Java application that connects to Azure DocumentDB.
