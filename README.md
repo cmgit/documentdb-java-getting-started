@@ -11,8 +11,7 @@ This sample shows you how to use the Microsoft Azure DocumentDB service to store
 
 * Before you can run this sample, you must have the following prerequisites:
 
-   * An active Azure account. If you don't have one, you can sign up for a [free account](https://azure.microsoft.com/free/). 
-       * Alternatively, you can use the [Azure DocumentDB Emulator](https://azure.microsoft.com/documentation/articles/documentdb-nosql-local-emulator) for this tutorial.
+   * An active Azure account. If you don't have one, you can sign up for a [free account](https://azure.microsoft.com/free/). Alternatively, you can use the [Azure DocumentDB Emulator](https://azure.microsoft.com/documentation/articles/documentdb-nosql-local-emulator) for this tutorial.
    * JDK 1.7+ (Run `apt-get install default-jdk` if you don't have JDK)
    * Maven (Run `apt-get install maven` if you don't have Maven)
 
