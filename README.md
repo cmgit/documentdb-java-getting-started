@@ -23,6 +23,10 @@ This sample shows you how to use the Microsoft Azure DocumentDB service to store
 
 * From a command prompt or shell, run `mvn exec:java -D exec.mainClass=GetStarted.Program` to run the application.
 
+* To run programs under samples package hierarchy edit configuration.properties in the resources directory to contain the proper values for your key and endpoint and then run `mvn package` to compile and resolve dependencies.
+
+* Then from a command prompt or shell run mvn for the class chosen (ex. `mvn exec:java -D exec.mainClass=samples.documentmanagement.DocumentManagement`
+
 ## About the code
 The code included in this sample is intended to get you quickly started with a Java application that connects to Azure DocumentDB.
 
