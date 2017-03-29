@@ -54,7 +54,7 @@ import samples.utils.ConnectUtil;
 public class DocumentManagement {
 
 	private static final String DATABASE_NAME = "samples";
-	private static final String COLLECTION_NAME = "auth-samples";
+	private static final String COLLECTION_NAME = "documentmanagement";
 	private static DocumentClient client;
 	private static final String DB_URL = "dbs/" + DATABASE_NAME;
 	private static final String COL_URL = DB_URL + "/colls/" + COLLECTION_NAME;
@@ -312,7 +312,7 @@ public class DocumentManagement {
 		cal.set(Calendar.MONTH, Calendar.JULY);
 		cal.set(Calendar.DAY_OF_MONTH, 8);
 		retVal.setShippedDate(cal.getTime());
-		retVal.setSubTotal(new BigDecimal("6107.0820"));
+		retVal.setSubTotal(new BigDecimal("6107.082"));//will truncate decimal if ending 0 is added thus leading big decimal equals to fail 
 		retVal.setTaxAmt(new BigDecimal("586.1203"));
 		retVal.setFreight(new BigDecimal("183.1626"));
 		retVal.setDiscountAmt(new BigDecimal("1982.872"));
